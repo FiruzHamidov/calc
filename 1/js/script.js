@@ -200,7 +200,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
    dropDownListItems.forEach(function (listItem) {
       listItem.addEventListener('click', function (e) {
          e.stopPropagation();
-         dropDownBtn.innerHTML = this.innerText + ' <span class="material-icons dropdown__button--rotate" >expand_more</span>';
+         // dropDownBtn.innerHTML = this.innerText + ' <span class="material-icons dropdown__button--rotate" >expand_more</span>';
          dropDownBtn.focus();
          dropDownInput.value = this.dataset.value;
          dropDownList.classList.remove('dropdown__list--visible');
