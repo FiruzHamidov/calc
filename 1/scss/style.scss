@@ -14,6 +14,10 @@ input {
   outline: 0;
 }
 
+body {
+  background: #F9F9F9;
+}
+
 textarea {
   outline: 0;
 }
@@ -30,7 +34,17 @@ h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1120px;
+}
+
+.card {
+  margin-top: 48px;
+}
+
+.card > .container, .extra > .container {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 48px;
 }
 
 .wrapper {
@@ -43,7 +57,6 @@ h6 {
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
-    margin-top: 48px;
     color: #101d3c;
   }
 
@@ -69,10 +82,11 @@ h6 {
     flex-direction: column;
     gap: 16px;
     padding: 24px;
-    background: rgba(255, 255, 255, 0.25);
     border: 1px solid transparent;
     border-radius: 8px;
     transition: 0.2s;
+    background: #FAFBFF;
+    cursor: pointer;
   }
 }
 
@@ -150,6 +164,7 @@ h6 {
     background: #fafbff;
     box-shadow: 0 2px 12px -2px rgba(64, 103, 203, 0.25);
     border-radius: 8px;
+    cursor: pointer;
   }
 }
 
@@ -205,6 +220,7 @@ h6 {
 .delete__box:hover {
   background: red;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .ex-form__area-inp input {
@@ -305,13 +321,19 @@ img {
   border-radius: 8px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .info {
   &__container {
-    margin-top: 96px;
+    margin-top: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 24px;
+    background: #FAFBFF;
+    border-radius: 8px;
   }
 
   &__hr {
@@ -328,6 +350,9 @@ img {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #ffffff;
   }
 
   &__title {
@@ -393,12 +418,14 @@ img {
 }
 
 .additional {
+  margin-top: 32px;
+
   &__container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 48px;
-    margin: 32px 0 96px 0;
+    margin: 0 32px;
   }
 
   button {
@@ -433,6 +460,11 @@ img {
     transition: 0.2s;
   }
 
+  &__button-first:active {
+    background: #1B3D93;
+    transition: 0.2s;
+  }
+
   &__button-last {
     background: #ffffff;
     border: 1px solid #4067cb;
@@ -446,6 +478,11 @@ img {
 
   &__button-last:hover {
     background: #e7ecf7;
+    transition: 0.2s;
+  }
+
+  &__button-last:hover {
+    background: #D0DBF7;
     transition: 0.2s;
   }
 
@@ -485,6 +522,12 @@ img {
 .dropdown__button:hover {
   background: #5b74b4;
   transition: 0.2s;
+  color: #FFFFFF;
+}
+
+.dropdown__button:active {
+  background: #455785;
+  color: #FFFFFF;
 }
 
 .dropdown {
@@ -593,21 +636,27 @@ img {
 
 .right-block__button {
   transition: 0.2s;
-  border: 1px solid #ffffff;
+  border: none;
   border-radius: 8px;
+  background: #fff;
+  cursor: default !important;
 }
 
 .extra {
+  margin-top: 48px;
+
   &__item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 48px;
   }
 
   &__left-block {
-    padding: 0 24px 24px;
+    padding: 24px;
     max-width: 309px;
+    background: #fafbff;
+    border-radius: 8px;
   }
 
   &__right-block {
@@ -755,7 +804,7 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 96px 0 190px 0;
+    margin: 48px 0 190px 0;
   }
 }
 
@@ -776,6 +825,7 @@ img {
 
 .tulpit {
   border: 1px solid #bcc9e9;
+
 }
 
 .advan-menu--active {
@@ -821,13 +871,11 @@ img {
 }
 
 .modal__close {
-  position: absolute;
-  top: 8px;
-  right: 14px;
+  position: relative;
   font-size: 30px;
   color: #000;
   font-weight: 700;
-  margin-right: 32px;
+  align-self: end;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -848,6 +896,14 @@ img {
   border-radius: 8px;
   padding: 0 20px;
   outline: 0;
+}
+
+.modal__textarea {
+  resize: none;
+  background: #fff;
+  border: 1px solid #bcc9e9;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .modal__area {
@@ -887,7 +943,6 @@ img {
   display: block;
   width: 360px;
   height: 56px;
-  margin: 0 auto;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -895,7 +950,17 @@ img {
   background: #4067cb;
   border-radius: 8px;
   border: 0;
-  margin-top: 48px;
+  margin: 48px auto 0;
+}
+
+.modal .btn:hover {
+  transition: 0.2s;
+  background: #2349AC;
+}
+
+.modal .btn:active {
+  transition: 0.2s;
+  background: #1B3D93;
 }
 
 .show {

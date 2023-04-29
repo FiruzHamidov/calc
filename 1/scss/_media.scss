@@ -1,9 +1,19 @@
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
+   .card {
+      margin-top: 12px;
+   }
+
    .additional__container {
       display: flex;
       justify-content: center;
       align-items: flex-start;
       gap: 24px;
+   }
+
+   .ad-block {
+      &__h3 {
+         white-space: nowrap;
+      }
    }
 }
 
