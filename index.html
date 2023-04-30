@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comintern project(beta)</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div id="app">
+    <div class="wrapper desktop-v">
+        <div class="desp">
+            <div class="card">
+                <div class="container">
+                    <section class="calc">
+                        <div class="calc__header-title">
+                            Расчет площади по количеству сотрудников
+                        </div><!--/calc__header-title-->
+                        <div class="advan calc__advan">
+                            <div data-advan="0" class="advan__item ad-block ad-active">
+                                <h3 class="ad-block__h3">Общее кол-во сотрудников</h3>
+                                <div class="ad-block__wrapper">
+                                    <div class="ad-block__inp number">
+                                        <button name="in" class="number-minus" type="button"><span
+                                                class="material-icons">
+                                 remove
+                              </span></button>
+                                        <input type="number" min="0" value="1" max="1000000">
+                                        <button name="in" class="number-plus" type="button"><span
+                                                class="material-icons">
+                                 add
+                              </span></button>
+                                    </div>
+                                    <img class="calc__img" src="img/secone-one.png" alt="">
+                                </div>
+                            </div>
+                            <div data-advan="1" class="advan__item ad-block">
+                                <h3 class="ad-block__h3"> Отдельных кабинетов
+                                </h3>
+                                <div class="ad-block__wrapper">
+                                    <div class="ad-block__out output ">
+                                        <div data-room class="output__text">3</div>
+                                    </div>
+                                    <img class="calc__img" src="img/secone-two.png" alt="">
+                                </div>
+                            </div>
+                            <div data-advan="2" class="advan__item ad-block">
+                                <h3 class="ad-block__h3">Переговорные комнаты</h3>
+                                <div class="ad-block__wrapper">
+                                    <div class="ad-block__out output">
+                                        <div data-roomOne class="output__text">3</div>
+                                    </div>
+                                    <img class="calc__img" src="img/secone-tre.png" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /advan -->
+                        <div class="betwenn-text">Выберите 1 или несколько вариантов, укажите кол-во по каждому</div>
+                        <div data-menu="0" class="advan-menu advan-menu--active">
+                            <div class="advan-menu__wrapper">
+                                <div class="advan-menu__item-wrapper">
+                                    <div data-name="openspace" class="advan-menu__item type-im menu-block new--padding">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Открытое пространство (openspace)</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <img class="calc__img" src="img/secone-one-img-one.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            Самый эффективный способ использования офисного пространства по кол-ву
+                                            сотрудников, (в
+                                            сравнении с другими планировками). Из мебели используют рабочие
+                                            станции/бенч-системы на
+                                            2-х,
+                                            4-х, 6-х и более человек. Зонирование, разделение по отделам, происходит
+                                            посредствам шум
+                                            поглощающих экранов/барьеров, корпусными шкафами с современными
+                                            системами-купэ, мобильными
+                                            и
+                                            стационарными перегородками.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advan-menu__item-wrapper">
+                                    <div data-name="openspace+cubicles" class="advan-menu__item type-im menu-block">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Смешанная (открытое
+                                                пространство+кабинеты)</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <img class="calc__img" src="img/secone-one-img-two.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            «Золотая середина» при выборе типа планировки офиса, позволяет критически
+                                            важные
+                                            зоны/отделы
+                                            выделить в отдельные закрытые пространства, все остальные подразделения
+                                            расположить с
+                                            максимальным полезным использованием S офиса. По мебели можно сэкономить,
+                                            использовав
+                                            разные
+                                            коллекции (разные цвета), при этом выделив более качественной мебелью более
+                                            значимые
+                                            кабинеты/переговорные/зоны ресепшн и пр.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advan-menu__item-wrapper item-grid">
+                                    <div data-name="cabinet" class="advan-menu__item type-im menu-block">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Классическая (Кабинетная планировка)</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <img class="calc__img" src="img/secone-one-img-tre.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            Имеет как свои плюсы, так и минусы. Из плюсов более комфортное расположение
+                                            сотрудников,
+                                            лучшая шумоизоляция между отделами, обычно в таких офисах присутствуют все
+                                            дополнительные
+                                            типы помещений для комфортной работы: кухни-столовые, туалеты, гардеробные,
+                                            зоны отдыха и
+                                            пр.
+                                            Из минусов, в сравнении с другими типами планировок, меньше всего
+                                            сотрудников поместится в
+                                            офисе. По мебели также можно «миксовать» коллекции, нужные помещения
+                                            выделять более
+                                            интересными дизайнерскими решениями, при необходимости мебелью подчеркивать
+                                            разделение/иерархию компании.
+                                        </p>
+                                    </div>
+                                </div>
+                                <input type="text" name="block-category" value="openspace" class="block__input-hidden">
+                            </div>
+                        </div><!-- /advan -->
+                        <div data-menu="1" class="advan-menu">
+                            <div class="advan-menu__wrapper">
+                                <div class="advan-menu__item-wrapper">
+                                    <div class="advan-menu__item menu-block new--padding-one">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Для руководителей малого звена</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <div data-roomInput class="menu-block__inp number">
+                                                <button name="in" class="number-minus" type="button"><span
+                                                        class="material-icons">
+                                       remove
+                                    </span></button>
+                                                <input type="number" min="0" value="1" max="1000000">
+                                                <button name="in" class="number-plus" type="button"><span
+                                                        class="material-icons">
+                                       add
+                                    </span></button>
+                                            </div>
+                                            <img class="calc__img" src="img/secone-two-img-one.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            В небольших кабинетах, минимально, устанавливаются более длинные рабочие
+                                            столы, чем у
+                                            персонала, с небольшими брифинг-приставками (либо отдельно стоящими столами
+                                            для
+                                            переговоров)
+                                            и стульями для посетителей, также в кабинеты с рекомендуется ставить
+                                            небольшие шкафные
+                                            группы
+                                            (1 гардероб или вешалка+ 1 шкаф для документов)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advan-menu__item-wrapper">
+                                    <div class="advan-menu__item menu-block">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Для руководителей среднего звена</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <div data-roomInput class="menu-block__inp number">
+                                                <button name="in" class="number-minus" type="button"><span
+                                                        class="material-icons">
+                                       remove
+                                    </span></button>
+                                                <input type="number" min="0" value="1" max="1000000">
+                                                <button name="in" class="number-plus" type="button"><span
+                                                        class="material-icons">
+                                       add
+                                    </span></button>
+                                            </div>
+                                            <img class="calc__img" src="img/secone-two-img-two.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            В небольших кабинетах, минимально, устанавливаются более длинные рабочие
+                                            столы, чем у
+                                            персонала, с небольшими брифинг-приставками (либо отдельно стоящими столами
+                                            для
+                                            переговоров)
+                                            и стульями для посетителей, также в кабинеты с рекомендуется ставить
+                                            небольшие шкафные
+                                            группы
+                                            (1 гардероб или вешалка+ 1 шкаф для документов)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advan-menu__item-wrapper item-grid">
+                                    <div class="advan-menu__item menu-block">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Кабинеты первых лиц компании</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <div data-roomInput class="menu-block__inp number">
+                                                <button name="in" class="number-minus" type="button"><span
+                                                        class="material-icons">
+                                       remove
+                                    </span></button>
+                                                <input type="number" min="0" value="1" max="1000000">
+                                                <button name="in" class="number-plus" type="button"><span
+                                                        class="material-icons">
+                                       add
+                                    </span></button>
+                                            </div>
+                                            <img class="calc__img" src="img/secone-two-img-tre.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            В подобные кабинеты ставятся хорошие коллекция мебели, преимущественно с
+                                            использованием
+                                            нат.
+                                            материалов (шпон, мдф, массив древесины, кожа), отдельно выделяется зона
+                                            переговоров,
+                                            отдельно зона отдыха руководителя (мягкие кресла/диваны).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /advan -->
+                        <div data-menu="2" class="advan-menu">
+                            <div class="advan-menu__wrapper">
+                                <div class="advan-menu__item-wrapper">
+                                    <div class="advan-menu__item menu-block">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Маленькая переговорная</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <div data-roomOneIndex class="menu-block__inp number">
+                                                <button name="in" class="number-minus" type="button"><span
+                                                        class="material-icons">
+                                       remove
+                                    </span></button>
+                                                <input type="number" min="0" value="1" max="1000000">
+                                                <button name="in" class="number-plus" type="button"><span
+                                                        class="material-icons">
+                                       add
+                                    </span></button>
+                                            </div>
+                                            <img class="calc__img" src="img/secone-tre-img-one.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            Используется hr-специалистами для проведения собеседований, подписания
+                                            документов, также
+                                            для
+                                            небольших «планерок» профильных групп. Из мебели ставят 1 круглый или
+                                            прямоугольный стол,
+                                            стулья или кресла и, если позволяет помещение, тумбу для канцелярии.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advan-menu__item-wrapper">
+                                    <div class="advan-menu__item menu-block">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Средняя переговорная</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <div data-roomOneIndex class="menu-block__inp number">
+                                                <button name="in" class="number-minus" type="button"><span
+                                                        class="material-icons">
+                                       remove
+                                    </span></button>
+                                                <input type="number" min="0" value="1" max="1000000">
+                                                <button name="in" class="number-plus" type="button"><span
+                                                        class="material-icons">
+                                       add
+                                    </span></button>
+                                            </div>
+                                            <img class="calc__img" src="img/secone-tre-img-two.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            Самые распространенные переговорные в офисах по кол-ву принимаемых людей в
+                                            помещении,
+                                            оборудуются обыкновенно прямоугольными столами 1800-2400 мм по длине,
+                                            креслами/стульями,
+                                            под
+                                            доп. функционал необходимой шкафной группой. Как альтернатива можно
+                                            использовать столы
+                                            трансформеры (складывающиеся, на колесиках, с креплением), для расширения
+                                            функционала
+                                            переговорной, а именно использовать как класс для обучения/проведения
+                                            brainshtorm в
+                                            рабочих
+                                            группах и пр.
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="advan-menu__item-wrapper item-grid">
+                                    <div class="advan-menu__item menu-block">
+                                        <div class="menu-block__header-box">
+                                            <h3 class="menu-block__title">Большая переговорная</h3>
+                                            <span data-tulpitOpen class="material-icons">
+                                 help_outline
+                              </span>
+                                        </div>
+                                        <div class="menu-block__wrapper">
+                                            <div data-roomOneIndex class="menu-block__inp number">
+                                                <button name="in" class="number-minus" type="button">
+                                                    <span class="material-icons">remove</span>
+                                                </button>
+                                                <input type="number" min="0" value="1" max="1000000">
+                                                <button name="in" class="number-plus" type="button">
+                                                    <span class="material-icons"> add </span>
+                                                </button>
+                                            </div>
+                                            <img class="calc__img" src="img/secone-tre-img-tre.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tulpit">
+                                        <p class="tulpit__text">
+                                            Для важных серьезных переговоров как внутри компании, так и с клиентами или
+                                            поставщиками,
+                                            комплектуются чаще всего коллекциями мебели с «наборными» столами,
+                                            позволяющими подстроить мебели под любую конфигурацию помещения (это и
+                                            возможность создать
+                                            столы Т, Г-образно, и наличие кабель каналов под провода и микрофоны и
+                                            механизмы для
+                                            выдвижения мониторов и пр.), красивыми креслами с удобными спинками и
+                                            механизмами, для
+                                            комфортного проведения длинных сессий и шкафной группой, с гардеробами,
+                                            тумбами под TV и
+                                            шкафами витринами.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /advan -->
+                    </section><!-- /calc -->
+                    <section class="info">
+                        <div class="info__container">
+                            <div class="info__left-block left-block">
+                                <div class="left-block__title-box">
+                                    <div class="left-block__title">
+                                        Вам подойдет офис площадью не менее
+                                    </div>
+                                    <div class="left-block__info">
+                                        260 м2
+                                    </div>
+                                </div>
+                                <div class="left-block__title-sup-box">
+                                    <div class="left-block__title-sup">
+                                        Ориентировоная стоимость комплектации офиса мебелью под ключ составит:
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="info__hr">
+                            <div class="info__right-block right-block">
+                                <div class="right-block__wrapper">
+                                    <button disabled name="economy" class="right-block__button"><span>Эконом</span>
+                                        <span
+                                                class="price">400.000</span></button>
+                                    <button disabled name="business" class="right-block__button"><span>Бизнес</span>
+                                        <span class="price">
+                              800.000</span></button>
+                                    <button disabled name="premium" class="right-block__button"><span>Премиум</span>
+                                        <span class="price">
+                              1.300.000</span></button>
+                                    <input type="text" name="button-category" value="economy"
+                                           class="button__input-hidden">
+                                </div>
+                            </div>
+                        </div>
+                    </section><!-- /info -->
+                    <section class="additional">
+                        <div class="additional__container">
+                            <div class="additional__button-box">
+                                <button class="additional__button-first" data-modal>Заказать мебель</button>
+                            </div>
+                            <div class="additional__button-box">
+                                <div class="dropdown">
+                                    <button class="dropdown__button"> Дополнительные параметры <span
+                                            class="material-icons">
+                              expand_more
+                           </span></button>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__list-item" data-value="travel">Кладовая</li>
+                                        <li class="dropdown__list-item" data-value="lessons">Кухня</li>
+                                        <li class="dropdown__list-item" data-value="photo">Свободного назначения</li>
+                                    </ul>
+                                    <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                </div>
+                                <div class="additional__sup-title">Сформировать спецификацию<br> помещений</div>
+                            </div>
+                            <div class="additional__button-box">
+                                <button class="additional__button-last" data-modal>Заказать мебель</button>
+                                <div class="additional__sup-title">Заказать план рассадку офиса <br> бесплатно</div>
+                            </div>
+                        </div>
+                    </section><!-- /additional -->
+                </div>
+            </div>
+
+            <section class="extra">
+                <div class="container">
+                    <div class="extra__container">
+                        <div class="extra__item">
+                            <div class="extra__left-block extra-left-block">
+                                <div class="extra-left-block__header-box">
+                                    <h3 class="extra-left-block__title">Маленькая переговорная</h3>
+                                    <span class="material-icons">
+                              help_outline
+                           </span>
+                                </div>
+                                <div class="extra-left-block__wrapper">
+                                    <img class="extra-left-block__img" src="img/drop-section-one.png" alt="">
+                                </div>
+                            </div>
+                            <div class="extra__right-block extra-right-block">
+                                <form action="#" name="extraForm" class="extra-right-block__form ex-form">
+                                    <div class="ex-form__up">
+                                        <div class="ex-form__up-wrapper">
+                                            <div class="ex-form__area-inp-box">
+                                                <div class="ex-form__inp-title">
+                                                    Выберете площадь помещения
+                                                </div>
+                                                <div class="ex-form__area-inp number">
+                                                    <button name="in" class="number-minus" type="button">
+                                          <span class="material-icons">
+                                             remove
+                                          </span>
+                                                    </button>
+                                                    <input type="text" min="0" value="1 м²" readonly>
+                                                    <button name="in" class="number-plus" type="button">
+                                          <span class="material-icons">
+                                             add
+                                          </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="ex-form__input-box">
+                                                <label for="ex-formOne" class="ex-form__inp-title">
+                                                    Введите название помещения
+                                                </label>
+                                                <input type="text" name="ex-name" id="ex-formOne"
+                                                       class="ex-form__input">
+                                            </div>
+                                        </div>
+                                        <div class="delete">
+                                            <div class="delete__box">
+                                    <span class="material-icons">
+                                       delete
+                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ex-form__down">
+                                        <div class="ex-form__down-box">
+                                            <label for="notesOne" class="ex-form__down-title">
+                                                Примечания
+                                            </label>
+                                            <textarea class="ex-form__down-textarea" name="notes" id="notesOne"
+                                                      cols="71"
+                                                      rows="4"></textarea>
+                                        </div>
+
+                                        <button class="ex-form__down-button">
+                                            Добавить
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- /extra -->
+            <section class="additional">
+                <div class="container">
+                    <div class="ad__footer">
+                        <div class="additional__button-box">
+                            <div class="dropdown">
+                                <button class="dropdown__button"> Дополнительные параметры
+                                    <span class="material-icons">
+                              expand_more
+                           </span>
+                                </button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item" data-value="travel">Кладовая</li>
+                                    <li class="dropdown__list-item" data-value="lessons">Кухня</li>
+                                    <li class="dropdown__list-item" data-value="photo">Свободного назначения</li>
+                                </ul>
+                                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- /additional -->
+        </div>
+        <div class="mobil">
+            <div class="mobil__fon">
+            </div>
+        </div>
+        <div class="modal">
+            <div class="container">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <form action="#" name="modal-form">
+                            <div class="modal__box">
+                                <div data-close class="modal__close">&times;</div>
+                            </div>
+
+                            <div class="modal__box">
+                                <label for="name-one" class="modal__title">Имя</label>
+                                <input required id="name-one" name="name" type="text" class="modal__input">
+                            </div>
+                            <div class="modal__box">
+                                <label for="email-one" class="modal__title mt">Email</label>
+                                <input required name="email" id="email-one" type="email" class="modal__input">
+                            </div>
+                            <div class="modal__box">
+                                <label for="tel-one" class="modal__title mt">Телефон</label>
+                                <input required name="tel" type="tel" id="tel-one" class="modal__input">
+                            </div>
+                            <div class="modal__box">
+                                <label for="tel-message" class="modal__title mt">Комментарии</label>
+                                <textarea required name="tel" rows="4" cols="49" id="tel-message"
+                                          class="modal__textarea"></textarea>
+                            </div>
+                            <button class="btn btn_dark btn_min">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container mobile-v">
+        <div class="name">Расчет площади по количеству сотрудников</div>
+
+        <div class="calc">
+            <div class="decide">
+                <div class="decide_name">Количество сотрудников</div>
+                <div class="decide_calc">
+
+                    <div class="minus"></div>
+
+                    <div class="line"></div>
+
+                    <div class="number-m">40</div>
+
+                    <div class="line"></div>
+
+                    <div class="plus"></div>
+                </div>
+            </div>
+
+            <div class="decide marg">
+                <div class="decide_name">Тип помещения</div>
+                <div class="clasica">
+                    <div class="text_calc">Классическая</div>
+                    <div class="str" id="str_1"></div>
+                    <div class="str close_str" id="str_1_cl"></div>
+                </div>
+            </div>
+
+            <div class="types">
+                <div class="type">
+                    <div class="open fl">
+                        <div class="open_text">Открытое (open space)</div>
+                        <div class="open_sign" id="vop"></div>
+                    </div>
+
+                    <div class="diferent fl">
+                        <div class="dif_text">Смешанная</div>
+                        <div class="dif_sign" id="vop_2"></div>
+                    </div>
+
+                    <div class="class fl">
+                        <div class="dif_text">Классическая</div>
+                        <div class="open_sign" id="vop_3"></div>
+
+
+                        <div class="text_o">
+                            <div class="book">
+                                Используется в основном hr-менеджерами для проведения собеседований, подписания
+                                документов с
+                                курьерами, также для небольших «планерок» профильных групп.
+                            </div>
+                            <div class="but_close">Свернуть</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        <div class="rooms">-->
+        <!--            <div class="room">-->
+        <!--                <div class="name_and_sign">-->
+        <!--                    <div class="name_room">Средняя переговорная</div>-->
+        <!--                    <div class="sing"></div>-->
+        <!--                </div>-->
+
+        <!--                <div class="decide_calc">-->
+        <!--                    <div class="minus"></div>-->
+        <!--                    <div class="number-m">1</div>-->
+        <!--                    <div class="plus"></div>-->
+        <!--                </div>-->
+
+        <!--                <div class="img_room">-->
+        <!--                    <div class="room_i"></div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <!--            <div class="room">-->
+        <!--                <div class="name_and_sign">-->
+        <!--                    <div class="name_room">Большая переговорная</div>-->
+        <!--                    <div class="sing"></div>-->
+        <!--                </div>-->
+
+        <!--                <div class="decide_calc">-->
+        <!--                    <div class="minus"></div>-->
+        <!--                    <div class="number-m">1</div>-->
+        <!--                    <div class="plus"></div>-->
+        <!--                </div>-->
+
+        <!--                <div class="img_room">-->
+        <!--                    <div class="room_i big"></div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <div class="offices">
+            <div class="name_room">Кабинеты</div>
+
+            <div class="own">
+                <div class="numder_offices">
+                    <div class="text_3">3</div>
+                </div>
+                <div class="str" id="str_2"></div>
+                <div class="str close_str" id="str_2_cl"></div>
+            </div>
+        </div>
+
+
+        <div class="offices_calc">
+            <div class="offices_ones">
+                <div class="name_and_sign">
+                    <div class="name_room">Кабинеты первых лиц</div>
+                    <div class="sing" id="vop_4"></div>
+                </div>
+
+                <div class="decide_calc">
+                    <div class="minus"></div>
+                    <div class="line"></div>
+                    <div class="number-m">1</div>
+                    <div class="line"></div>
+                    <div class="plus"></div>
+                </div>
+            </div>
+
+
+            <div class="offices_one">
+                <div class="name_and_sign">
+                    <div class="name_room">Для руководителей отделов</div>
+                    <div class="sing" id="vop_5"></div>
+                </div>
+
+                <div class="decide_calc">
+                    <div class="minus"></div>
+                    <div class="line"></div>
+                    <div class="number-m">1</div>
+                    <div class="line"></div>
+                    <div class="plus"></div>
+                </div>
+            </div>
+
+
+            <div class="offices_one">
+                <div class="name_and_sign">
+                    <div class="name_room">Для малых руководителей</div>
+                    <div class="sing" id="vop_6"></div>
+                </div>
+
+                <div class="decide_calc">
+                    <div class="minus"></div>
+                    <div class="line"></div>
+                    <div class="number-m">1</div>
+                    <div class="line"></div>
+                    <div class="plus"></div>
+                </div>
+            </div>
+            <div class="text_o two">
+                <div class="book">
+                    Используется в основном hr-менеджерами для проведения собеседований, подписания документов с
+                    курьерами,
+                    также для небольших «планерок» профильных групп.
+                </div>
+                <div class="but_close cl">Свернуть</div>
+            </div>
+
+        </div>
+
+        <div class="officese">
+            <div class="name_room">Переговорные</div>
+
+            <div class="own">
+                <div class="numder_offices blue">1</div>
+                <div class="str"></div>
+            </div>
+
+        </div>
+
+        <div class="officese">
+            <div class="name_room">Кухни</div>
+
+            <div class="own">
+                <div class="numder_offices red">1</div>
+                <div class="str"></div>
+            </div>
+        </div>
+
+        <div class="blok_with_img">
+            <div class="img"></div>
+        </div>
+
+        <div class="s">
+            <div class="field">
+                <div class="s_name">Вам подойдет офис площадью не менее</div>
+                <div class="number_s">260 м<sup>2</sup></div>
+            </div>
+
+            <div class="dop_field">
+                <div class="price_s_name">Ориентировоная стоимость комплектации офиса мебелью под ключ составит:</div>
+
+                <div class="prices">
+                    <div class="price o">Эконом 400.000</div>
+                    <div class="price os">Бизнес 800.000</div>
+                    <div class="price ost">Премиум 1.300.000</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="end_buts">
+            <div class="but a">Дополнительные параметры</div>
+            <div class="but b">План рассадка</div>
+            <div class="but c">Заказать мебель</div>
+        </div>
+
+
+        <div class="zapis">
+            <div class="delete"></div>
+
+            <div class="own_2">
+                <div class="named">
+                    <div class="naming_text">Средняя переговорная</div>
+                    <div class="sing" id="vop_7"></div>
+                </div>
+                <div class="s_text">Выберите площадь помещения</div>
+
+                <div class="decide_calc">
+                    <div class="minus"></div>
+                    <div class="line"></div>
+                    <div class="number-m">1</div>
+                    <div class="line"></div>
+                    <div class="plus"></div>
+                </div>
+
+                <div class="text_about">Введите название помещения</div>
+
+                <input type="text" name="" class="field_cod">
+
+                <div class="text_about">Примечание</div>
+
+                <textarea type="text" name="" class="field_cod_2" rows="5"></textarea>
+
+                <div class="but_zacaz">Заказать мебель</div>
+            </div>
+
+            <div class="text_o tree">
+                <div class="book">
+                    Используется в основном hr-менеджерами для проведения собеседований, подписания документов с
+                    курьерами,
+                    также для небольших «планерок» профильных групп.
+                </div>
+                <div class="but_close cl2">Свернуть</div>
+            </div>
+        </div>
+
+
+        <div class="but_dop_flat">
+            <div class="dop_text">Дополнительные помещения</div>
+            <div class="str_bl" id="str_3"></div>
+            <div class="str_bl close_str" id="str_3_cl"></div>
+        </div>
+
+        <div class="list">
+            <div class="part">Кладовая</div>
+            <div class="part">Кухня</div>
+            <div class="part">Свободного назначения</div>
+        </div>
+
+    </div>
+
+<!--    <Doughnut :data="chartData" :options="options"></Doughnut>-->
+
+</div>
+<script src="js/script.js"></script>
+<!--<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
+
+<!--<script type="module" src="js/app.js"></script>-->
+
+</body>
+
+</html>
